@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+        <div class="container">
+<form action="/api/friends" method="POST">
+                <h2>Survey Questions</h2>
+                <hr>
+            
+                <h3><strong>About You</strong></h3>
+                <h4>Name (Required)</h4>
+                <input type="text" id="name" class="form-control" required>
+            
+                <h4>Link to Photo Image (Required)</h4>
+                <input type="text" id="photo" class="form-control" required>
+            
+                <hr>
+            
+                <h3><strong>Question 1</strong></h3>
+                <h4>Your philosophy about others is my way or the highway.</h4>
+                <select class="chosen-select" id="q1">
+                  <option value=""></option>
+                  <option value="1">1 (Strongly Disagree)</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5 (Strongly Agree)</option>
+                </select>
+            
+                <h3><strong>Question 2</strong></h3>
+                <h4>When you get into a disagreement with someone close to you, you deal with it then and there.</h4>
+                <select class="chosen-select" id="q2">
+                  <option value=""></option>
+                  <option value="1">1 (Strongly Disagree)</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5 (Strongly Agree)</option>
+                </select>
+            
+            
+                <h3><strong>Question 3</strong></h3>
+                <h4>When you are upset with someone, you are more likely to dish out the silent treatment.</h4>
+                <select class="chosen-select" id="q3">
+                  <option value=""></option>
+                  <option value="1">1 (Strongly Disagree)</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5 (Strongly Agree)</option>
+                </select>
+            
+            
+                <h3><strong>Question 4</strong></h3>
+                <h4>When it comes to making decisions, you always make quick decisions.</h4>
+                <select class="chosen-select" id="q4">
+                  <option value=""></option>
+                  <option value="1">1 (Strongly Disagree)</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5 (Strongly Agree)</option>
+                </select>
+            
+            
+                <h3><strong>Question 5</strong></h3>
+                <h4>You would rather have more wisdom.</h4>
+                <select class="chosen-select" id="q5">
+                  <option value=""></option>
+                  <option value="1">1 (Strongly Disagree)</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5 (Strongly Agree)</option>
+                </select>
+            
+            
+                <h3><strong>Question 6</strong></h3>
+                <h4>I would describe myself as high maintenance.</h4>
+                <select class="chosen-select" id="q6">
+                  <option value=""></option>
+                  <option value="1">1 (Strongly Disagree)</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5 (Strongly Agree)</option>
+                </select>
+            
+            
+                <h3><strong>Question 7</strong></h3>
+                <h4>In a discussion, truth should be more important than people’s sensitivities.</h4>
+                <select class="chosen-select" id="q7">
+                  <option value=""></option>
+                  <option value="1">1 (Strongly Disagree)</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5 (Strongly Agree)</option>
+                </select>
+            
+                <h3><strong>Question 8</strong></h3>
+                <h4>You see yourself as a pessimist majority of the time.</h4>
+                <select class="chosen-select" id="q8">
+                  <option value=""></option>
+                  <option value="1">1 (Strongly Disagree)</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5 (Strongly Agree)</option>
+                </select>
+            
+                <h3><strong>Question 9</strong></h3>
+                <h4>You identify with being a workaholic.</h4>
+                <select class="chosen-select" id="q9">
+                  <option value=""></option>
+                  <option value="1">1 (Strongly Disagree)</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5 (Strongly Agree)</option>
+                </select>
+            
+                <h3><strong>Question 10</strong></h3>
+                <h4>The statement, "God is a man-made concept" is completely true.</h4>
+                <select class="chosen-select" id="q10">
+                  <option value=""></option>
+                  <option value="1">1 (Strongly Disagree)</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5 (Strongly Agree)</option>
+                </select>
+            
+                <br>
+                <br>
+            
+                <!-- Submit Button -->
+                <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="check-circle" aria-hidden="true"></i>
+                 Submit</button>
+                </form>
+
+</body>
+</html>
+
+<script>
+    //payload is hardcoded but need to load data from a form--
+    var payload = {
+      "name": "ME",
+      "photo": "http://mlb.mlb.com/mlb/images/players/head_shot/501925.jpg",
+      "scores": [
+        1,
+        3,
+        3,
+        3,
+        2,
+        1,
+        3,
+        3,
+        2,
+        5
+      ]
+    }
+  
+
+
+$.post("../api/friends", payload, function(myChosenFriend){
+    console.log(myChosenFriend)
+    //write chosen friend value somewhere 
+})
+
+
+
+      
+
+
+</script>
